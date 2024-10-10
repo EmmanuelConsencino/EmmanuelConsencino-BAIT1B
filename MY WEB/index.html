@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emmanuel A. Consencino</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -16,6 +16,7 @@
         <nav class="navbar">
             <a href="#Home">Home</a>
             <a href="#Gallery">Gallery</a>
+            <a href="#Suggestion">Suggestion</a>
             <a href="#Contact">Contact</a>
         </nav>
     </header>
@@ -46,25 +47,24 @@
             <p>I use Kinemaster, Capcut and Alight Motion to edit my videos.</p>
         </div>
     </section>
-    
-    <form class="form">
-
-        <div class="first">
-         <label for="fname"><b>First Name:</b></label>
-         <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+    <section id="Suggestion">
+    <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+           <div class="contact-left-title">
+            <h2>Suggestion</h2>
+            <hr>
+           </div>
+           <input type="hidden" name="access_key" value="3b58d18e-4042-4ef9-bda3-8a7ff097026b">
+           <input type="text" name="name" placeholder="Full Name"  class="contact-input">
+           <input type="email" name="email" placeholder="Email"  class="contact-input">
+           <textarea name="message" placeholder="Suggestion for my website" class="contact-input"></textarea>
+           <button type="submit" target="none">Submit</button>
+        </form>
+        <div class="contact-right">
+        </section>
         </div>
 
-        <div class="last">
-         <label for="lname"><b>Last Name:</b></label>
-         <input type="text" id="lname" name="lname" placeholder="Enter your Last Name">
-        </div>
-
-        <div class="sug">
-        <label for="Suggestion"><b>Rate my website(1/10)</b></label>
-        <input type="text" id="Suggestion" name="Suggestion" placeholder="Rate">
-        <div>
-
-            <button type="button" class="butn">Submit</button>
+    </div>
 
     </form>
 

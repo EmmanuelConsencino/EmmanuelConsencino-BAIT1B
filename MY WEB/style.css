@@ -8,7 +8,7 @@
 }
 
 body{
-    background: darkcyan;
+    background: linear-gradient(rgb(62, 79, 99), rgb(67, 173, 192));
     background-repeat: no-repeat;
     
     
@@ -25,7 +25,7 @@ body{
     display: flex;
     align-items: center;
     z-index: 100;
-    background-color: #ffe5b4;
+    background-color: black;
 }
 
 .logo{
@@ -37,7 +37,7 @@ body{
 
 .navbar a{
     font-size: 17px;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     font-weight: 800;
     transition: 1s;
@@ -112,7 +112,6 @@ iframe{
 .gallery-header{
     text-align: center;
     font-size: 75px;
-    font-weight: bold;
     font-family: 'Times New Roman';
 }
 .video{
@@ -123,7 +122,7 @@ iframe{
     margin-top: 100px;
     text-align: center;
     font-family: 'Times New Roman';
-    font-size: 35px;
+    font-size: 28px;
     margin-bottom: 100px;
 }
 
@@ -192,7 +191,7 @@ iframe{
 .contact{
     text-align: center;
     margin-top: 100px;
-    background-color: wheat;
+    background-color: whitesmoke;
     padding: 20px;
 }
 
@@ -200,44 +199,62 @@ iframe{
     margin-bottom: 10px;
 }
 
-.form{
+.form-container{
+    height: 100vh;
     align-items: center;
-    margin-top: 200px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 50px;
 }
 
-.last input{
-    height: 30px;
-    border: 10px;
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
     border-radius: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    background-color: black;
+    height: 5px;
 }
 
-.first input{
-    height: 30px;
-    border: 10px;
-    border-radius: 10px;
-}
-
-.sug input{
-    height: 30px;
-    width: 50px;
-    border: 10px;
-    border-radius: 10px;
-}
-
-.first{
-    margin-top: 10px;
-}
-
-.last{
-    margin-top: 10px;
-}
-
-.sug{
-    margin-top: 10px;
-}
-
-.butn{
+.contact-input{
+    width: 400px;
+    border: none;
     height: 50px;
-    width: 100px;
-    margin-top: 20px;
+    outline: none;
+    padding-left: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-input:focus{
+    border: 2px solid black;
+}
+
+.contact-left button{
+    display: flex;
+    padding: 15px 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    gap: 10px;
 }
